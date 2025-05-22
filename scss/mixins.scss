@@ -1,0 +1,22 @@
+@mixin lista {
+     list-style: none;
+}
+
+@mixin containers {
+     max-width: 1024px;
+     width: 100%;
+     margin: 0 auto;
+}
+
+@function column-width($total-columns, $gap-percent) {
+     $total-gap: ($total-columns - 1) * $gap-percent;
+     @return (100% - $total-gap) / $total-columns;
+}
+
+@mixin products-grid($columns, $gap) {
+     grid-template-columns: repeat($columns, column-width($columns, $gap));
+     column-gap: $gap;
+     row-gap: 4%;
+     width: 100%;
+     margin-top: 40px;
+}

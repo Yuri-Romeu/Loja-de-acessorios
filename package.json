@@ -1,0 +1,16 @@
+{
+     "name": "exercicio_modulo-15-ebac",
+     "version": "1.0.0",
+     "description": "",
+     "main": "index.js",
+     "scripts": {
+          "sass": "sass ./scss/main.scss ./css/style.css --watch",
+          "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "keywords": [],
+     "author": "",
+     "license": "ISC",
+     "devDependencies": {
+          "sass": "^1.89.0"
+     }
+}
